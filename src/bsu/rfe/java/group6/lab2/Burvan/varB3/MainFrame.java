@@ -36,11 +36,11 @@ public class MainFrame extends JFrame {
     private int formulaId = 1;
 
     public Double calculate1(Double x, Double y, Double z) {
-        return x*x + y*y;
+        return Math.sin(Math.log(y)+Math.sin(Math.PI*y*y))*Math.pow((x*x+Math.sin(z)+Math.pow(Math.E,Math.cos(z))), 0.25);
     }
 
     public Double calculate2(Double x, Double y, Double z) {
-        return x*x*x + 1/y;
+        return (1+Math.pow(x, z)+Math.log(y*y))/Math.sqrt(x*x*x+1)*(1-Math.sin(y*z));
         }
 
     private void addRadioButton(String buttonName, final int formulaId) {
